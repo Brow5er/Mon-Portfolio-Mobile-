@@ -1,0 +1,345 @@
+/* color : b7b7b7
+           262626 */
+
+
+* {
+    margin: 0;
+    font-family: 'Clash Display', sans-serif;
+}
+
+body {
+    background-color: #222224;
+}
+/* HOME  */
+.home {
+    /* background-color: aqua; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222224ff;
+
+}
+
+.home-bg {
+    background-image: url('asset/sp_cloth-4k.gif');
+    background-size: cover;
+    height: 95vh;
+    width: 95vw;
+    border-radius: 25px;
+    position: relative;
+}
+
+a.my-button {
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    font-family: 'Clash Display', sans-serif;
+    background-color: #262626;
+    color: #b7b7b7;
+    font-size: 23px;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 15px 15px;
+    border: 2px solid #b7b7b7;
+    border-radius: 15px;
+}
+
+.my-button:hover {
+    background-color: #b7b7b7;
+    color: #262626;
+}
+
+.bar {
+    display: flex;
+    position: absolute;
+    height: 3px;
+    width: 110px;
+    top: 40px;
+    transform-origin: center left;
+    right: 35px;
+    background-color: #8c8c73ff;
+    transform: scaleX(0);
+}
+
+.my-button:hover+.bar {
+    pointer-events: none;
+    transition: transform 300ms;
+    transform: scaleX(1);
+
+}
+
+a.my-button:active {
+    transform: scale(0.99);
+}
+
+.big-titre {
+    position: absolute;
+    bottom: 0;
+    /* background-color: #222224ff; */
+    left: 30px;
+}
+
+.titre {
+    font-size: 10vw;
+    color: #b7b7b7ff;
+}
+
+@media screen and (max-width: 530px) {
+    .home-bg {
+        display: flex;
+        background-image: url('asset/sp_cloth-4k.gif');
+        background-size: cover;
+        height: 95vh;
+        width: 95vw;
+        border-radius: 25px;
+    }
+
+    .big-titre {
+        position: absolute;
+        bottom: 85px;
+        left: -20px;
+        transform: rotate(-90deg);
+    }
+
+    .titre {
+
+        font-size: 15vw;
+        color: #b7b7b7ff;
+    }
+}
+/* GITHUB LIEN  */
+.lien-git {
+    position: relative;
+    height: 10vh;
+    margin: auto;
+    overflow: hidden;
+    width: 95%;
+    background-color: #222224ff;
+    overflow-x: hidden;
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.content {
+    font-size: 8vh;
+    font-weight: 200;
+    color: #b7b7b7;
+}
+
+@media screen and (max-width: 768px) {
+    .lien-git {
+        position: relative;
+        height: 6vh;
+        background-color: #222224ff;
+        overflow-x: hidden;
+    }
+
+    .content {
+        font-size: 5vh;
+        font-weight: 200;
+    }
+}
+/* ABOUT  */
+.about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.windows-about {
+    display: flex;
+    background-color: #b7b7b7ff;
+    height: 95vh;
+    width: 95vw;
+    border-radius: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me {
+    margin: 0 auto;
+}
+
+.about-me h2 {
+    font-size: 10vw;
+    color: #222224ff;
+}
+
+.txt-img {
+    display: flex;
+    /* background-color: #fff; */
+    height: 70%;
+    width: 85%;
+    align-items: center;
+    /* margin: auto; */
+}
+
+.img {
+    background-image: url('asset/portrait.jpg');
+    background-size: cover;
+    background-position: top;
+    border-radius: 25px;
+    height: 90%;
+    width: 40%;   
+}
+
+/* .txt-img img {
+    border-radius: 25px;
+    height: auto;
+    width: 40%;
+} */
+
+.txt {
+    background-color: red;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    /* align-self: center; */
+}
+
+.txt h3 {
+    font-weight: 600;
+    font-size: 3vw;
+    color: #262626;
+    margin: 10px;
+    align-self: center;
+}
+
+.txt P {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    color: #262626;
+    align-self: center;
+}
+
+/* @media screen and (max-width: 768px) {
+
+    .windows-about {
+        display: flex;
+        background-color: #b7b7b7ff;
+        height: 195vh;
+        width: 95vw;
+        border-radius: 25px;
+        flex-direction: column;
+    }
+
+    .about {
+        height: 200vh;
+        display: flex;
+    }
+
+
+    .about-me h2 {
+        font-size: 15vw;
+        color: #222224ff;
+    }
+
+    .txt-img {
+        display: flex;
+        background-color: #fff;
+        height: 90%;
+        width: 90%;
+        flex-direction: column;
+
+    }
+
+    img {
+        height: 60vh;
+        width: 60vw;
+        border-radius: 25px;
+        margin: 15px;
+    }
+
+    .txt {
+        background-color: red;
+        margin: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    } */
+
+/* @media screen and (max-width: 1024px) {
+    .txt-img {
+        display: flex;
+        background-color: #fff;
+        height: 76%;
+        width: 95%;
+        align-items: center;
+        margin: auto;
+    }
+
+    img {
+        height: 40vh;
+        align-self: center;
+    }
+
+} */
+
+
+
+
+/* 
+    .txt h3 {
+        font-weight: 200;
+        font-size: 6vw;
+        color: #262626;
+        align-self: center;
+    }
+
+    .txt P {
+        font-family: 'Clash Display', sans-serif;
+        font-weight: 400;
+        font-size: 2.3vw;
+        color: #262626;
+        align-self: center;
+    } */
+/* } */
+
+/* @media screen and (max-width: 530px) {
+    .txt-img {
+        display: flex;
+        background-color: #fff;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    .txt-img img {
+        height: 11%;
+        border-radius: 25px;
+        margin-right: 100px;
+    }
+    .txt h3 {
+        font-weight: 600;
+        font-size: 45px;
+        color: #262626;
+        text-shadow: 5px 5px 10px #404040;
+        margin: 25px;
+    }
+    .txt P {
+        font-family: 'Clash Display', sans-serif;
+        font-weight: 400;
+        font-size: 35px;
+        color: #262626;
+        margin-right: 15px;
+    }
+} */
