@@ -270,11 +270,11 @@ a.my-button:active {
         width: 50%;   
     }
     
-    /* .txt {
-        background-color: red;
+    .txt {
+        /* background-color: red; */
         display: flex;
         width: 60%;
-        height: 90%;
+        height: 50%;
         padding: 20px;
         flex-direction: column;
         justify-content: center;
@@ -282,7 +282,7 @@ a.my-button:active {
     
     .txt h3 {
         font-weight: 600;
-        font-size: 3vw;
+        font-size: 4vw;
         color: #262626;
         align-self: center;
     }
@@ -293,50 +293,8 @@ a.my-button:active {
         font-size: 2vw;
         color: #262626;
         align-self: center;
-    } */
+    }
 }
-/* @media screen and (max-width: 1024px) {
-    .txt-img {
-        display: flex;
-        background-color: #fff;
-        height: 76%;
-        width: 95%;
-        align-items: center;
-        margin: auto;
-    }
-
-    img {
-        height: 40vh;
-        align-self: center;
-    }
-
-} */
-
-/* @media screen and (max-width: 530px) {
-    .txt-img {
-        display: flex;
-        background-color: #fff;
-        flex-direction: column;
-        width: 80%;
-        margin: auto;
-    }
-    .txt-img img {
-        height: 11%;
-        border-radius: 25px;
-        margin-right: 100px;
-    }
-    .txt h3 {
-        font-weight: 600;
-        font-size: 45px;
-        color: #262626;
-        text-shadow: 5px 5px 10px #404040;
-        margin: 25px;
-    }
-    .txt P {
-        font-family: 'Clash Display', sans-serif;
-        font-weight: 400;
-        font-size: 35px;
-        color: #262626;
-        margin-right: 15px;
-    }
-} */
+ @media screen and (max-width: 425px) {
+    
+ }
