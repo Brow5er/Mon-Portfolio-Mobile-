@@ -10,6 +10,7 @@
 body {
     background-color: #222224;
 }
+
 /* HOME  */
 .home {
     /* background-color: aqua; */
@@ -75,6 +76,7 @@ a.my-button:active {
 }
 
 .big-titre {
+    display: flex;
     position: absolute;
     bottom: 0;
     /* background-color: #222224ff; */
@@ -86,7 +88,7 @@ a.my-button:active {
     color: #b7b7b7ff;
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 425px) {
     .home-bg {
         display: flex;
         background-image: url('asset/sp_cloth-4k.gif');
@@ -105,10 +107,11 @@ a.my-button:active {
 
     .titre {
 
-        font-size: 15vw;
+        font-size: 17vw;
         color: #b7b7b7ff;
     }
 }
+
 /* GITHUB LIEN  */
 .lien-git {
     position: relative;
@@ -156,6 +159,7 @@ a.my-button:active {
         font-weight: 200;
     }
 }
+
 /* ABOUT  */
 .about {
     height: 100vh;
@@ -199,7 +203,7 @@ a.my-button:active {
     background-position: top;
     border-radius: 25px;
     height: 90%;
-    width: 40%;   
+    width: 40%;
 }
 
 .txt {
@@ -229,6 +233,12 @@ a.my-button:active {
     align-self: center;
 }
 
+@media screen and (max-width: 1024px) {
+    .img {
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     .windows-about {
@@ -254,47 +264,156 @@ a.my-button:active {
     .txt-img {
         display: flex;
         /* background-color: #fff; */
-        height: 70%;
+        height: 90%;
         width: 85%;
         align-items: center;
         flex-direction: column;
-        /* margin: auto; */
     }
-    
+
     .img {
         background-image: url('asset/portrait.jpg');
         background-size: cover;
         background-position: top;
         border-radius: 25px;
         height: 50%;
-        width: 50%;   
+        width: 70%;
     }
-    
+
     .txt {
-        /* background-color: red; */
         display: flex;
-        width: 60%;
+        width: 70%;
         height: 50%;
-        padding: 20px;
+        margin: 10px;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .txt h3 {
         font-weight: 600;
         font-size: 4vw;
         color: #262626;
         align-self: center;
+        margin: 10px;
     }
-    
+
     .txt P {
         font-family: 'Clash Display', sans-serif;
         font-weight: 400;
-        font-size: 2vw;
+        font-size: 2.5vw;
         color: #262626;
         align-self: center;
     }
 }
- @media screen and (max-width: 425px) {
-    
- }
+
+@media screen and (max-width: 425px) {
+    .img {
+        width: 80%;
+        height: 50%;
+    }
+
+    .txt {
+        width: 80%;
+        height: 50%;
+    }
+
+    .txt h3 {
+        font-size: 5vw;
+    }
+
+    .txt p {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .img {
+        width: 80%;
+        height: 50%;
+    }
+
+    .txt {
+        width: 80%;
+        height: 50%;
+    }
+
+    .txt h3 {
+        font-size: 5vw;
+    }
+
+    .txt p {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .img {
+        width: 80%;
+        height: 50%;
+    }
+
+    .txt {
+        width: 80%;
+        height: 50%;
+    }
+
+    .txt h3 {
+        font-size: 6vw;
+    }
+
+    .txt p {
+        font-size: 5vw;
+    }
+}
+
+/* .skills {
+    background-color: #b7b7b7ff;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.windows-skills {
+    display: flex;
+    background-color: #222224ff;
+    height: 95vh;
+    width: 95vw;
+    border-radius: 25px;
+    flex-direction: column;
+}
+
+.windows-skills, .titre-skills {
+    align-items: center;
+}
+
+.titre-skills {
+color: #b7b7b7ff;
+font-size: 7vw;
+}
+
+.soft-skill {
+    display: flex;
+    background-color: aquamarine;
+    margin: 15px;
+    height: 60vh;
+    width: 70vw;
+
+}
+
+.soft {
+    display: flex;
+}
+
+.titre h3{
+    font-size: 2.86vw;
+    margin: 15px;
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+.titre p {
+    background-color: #fff;
+    font-size: 40px;
+    margin: 15px;
+} */
