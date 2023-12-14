@@ -9,6 +9,18 @@
 
 body {
     background-color: #222224;
+
+}
+
+body::-webkit-scrollbar {
+    width: 0.7em;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 10px;
 }
 
 /* HOME  */
