@@ -377,7 +377,7 @@ a.my-button:active {
     }
 }
 
-/* .skills {
+.skills {
     background-color: #b7b7b7ff;
     display: flex;
     height: 100vh;
@@ -401,12 +401,12 @@ a.my-button:active {
 
 .titre-skills {
 color: #b7b7b7ff;
-font-size: 7vw;
+font-size: 10vw;
 }
 
 .soft-skill {
     display: flex;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     margin: 15px;
     height: 60vh;
     width: 70vw;
@@ -418,14 +418,14 @@ font-size: 7vw;
 }
 
 .titre h3{
-    font-size: 2.86vw;
+    font-size: 2.5vw;
     margin: 15px;
     margin-top: 40px;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .titre p {
-    background-color: #fff;
-    font-size: 40px;
+    /* background-color: #fff; */
+    font-size: 35px;
     margin: 15px;
-} */
+}
